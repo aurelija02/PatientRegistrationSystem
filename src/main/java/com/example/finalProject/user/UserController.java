@@ -67,7 +67,6 @@ public class UserController {
                 .header("Access-Control-Expose-Headers", "Authorization")
                 .body(userDto);
     }
-    //vietoj build - body
 
     @PutMapping("/patient/{id}")
     public UserDto updateUserP (@Valid @RequestBody UserDto userDto, @PathVariable (name = "id") Long id){
