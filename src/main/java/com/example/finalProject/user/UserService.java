@@ -52,11 +52,6 @@ public class UserService {
         repo.save(user);
         return mapper.toDto(user);
     }
-//    public UserDto loginUser (UserDto userDto){
-//        if (repo.findByEmail(userDto.getEmail()).isPresent()){
-//            throw new Exception("Email "+userDto.getEmail()+" is already in use");
-//        }
-  //  }
     public UserDto updateUserPatient (UserDto userDto){
         User user = mapper.fromDtoPatient(userDto);
 
